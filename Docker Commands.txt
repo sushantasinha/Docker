@@ -1,0 +1,113 @@
+Docker Machine
+
+$ docker-machine ls
+NAME      ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
+default   *        virtualbox   Running   tcp://192.168.99.100:2376           v17.12.1-ce
+
+$ docker-machine start [machine name --> here is default]
+
+$ docker-machine stop [machine name --> here is default]
+
+$ docker-machine env default
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="C:\Users\Sushanta\.docker\machine\machines\default"
+export DOCKER_MACHINE_NAME="default"
+export COMPOSE_CONVERT_WINDOWS_PATHS="true"
+# Run this command to configure your shell:
+# eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env default)
+
+$ docker-machine ip default
+192.168.99.100
+
+$ docker-machine status default
+Running
+
+
+If we have multiple machine and we want to switch from default to that machine:
+
+STEP 1 $ docker-machine env default
+			export DOCKER_TLS_VERIFY="1"
+			export DOCKER_HOST="tcp://192.168.99.100:2376"
+			export DOCKER_CERT_PATH="C:\Users\Sushanta\.docker\machine\machines\default"
+			export DOCKER_MACHINE_NAME="default"
+			export COMPOSE_CONVERT_WINDOWS_PATHS="true"
+			# Run this command to configure your shell:
+			# eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env default)
+
+STEP 2 eval $("C:\Program Files\Docker Toolbox\docker-machine.exe" env default)
+
+
+$ docker-machine -> List of all commands
+
+
+
+
+
+Docker Client:
+
+docker pull [image name] -> download image from docker hub
+
+docker run [image name] -> run docker image
+
+docker images -> list of all images
+
+docker ps -> list of all running containers
+
+docker ps -a -->all containers incl.those are stopped 
+
+docker rm <container id> ->remove container, dont need to type entire id it will pick the one whidh is startes with 24
+
+docker rmi  <image id>
+
+docker ->list of all commands
+
+$ docker run -p 80:80 kitematic/hello-world-nginx ->then open another docker quickstart terminal and run docker ps and then run <m/c ip>:<port> if port 80, no need to provide so, http://<ip of  docker machine>
+
+docker stop <id>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
