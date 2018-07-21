@@ -1,0 +1,26 @@
+1. Docker Image  -> Eg.Ubuntu + node.js + application code
+
+2. Docker Containers -> Live Application Run (Running Image)
+
+3. Docker Client -> Manage Containers (start/stop/delete. Docker Client is integrate with Docker Engine + OS
+
+Docker Client == Docker Ship
+Docker Engine == Crane to offload from or onload to the ship
+
+4. Docker Engine -> Help client to stop/start/de;ete container (like, Crane to offload from or onload to the ship).
+
+5. Docker ToolBox -> provide image + container tools, provides VM for windows and Mac. So container can tun on Linux VM.
+(forn windows 10 Pro or Mac, use Docker Community Edition tool)
+
+6. Docker Machine ->  Allow to manage VM/VMs.If we use docker toolbox, will be used little bit. If Community Edition , 
+probably not req. except specific scenario where we want to interact with VM
+
+7. Docker Compose -> Allow to set multiple containers + interact between them
+
+8. Docker Kitemetic -> GUI for grabbing image etc. 
+
+9. Docker Virtual Box -> it will came if we use Docker ToolBox. It gives us a CLI to run Linux commands.
+
+
+
+
